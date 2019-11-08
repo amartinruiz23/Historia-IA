@@ -51,13 +51,43 @@ El agente racional no solo se centra en hacer inferencias correctas, sino que ad
 
 ## Historia de la inteligencia artificial
 
-### Génesis de la inteligencia artificial
+### Génesis de la inteligencia artificial (1943-1955)
+Warren McCulloch y Walter Pitts (1943) han sido reconocidos como los autores del primer trabajo de IA, partiendo tres fuentes: conocimientos sobre la fisiología básica y funcionamiento de las neuronas en el cerebro, el análisis formal de la lógica proposicional de Russel y Whitehead y la teoría de computación de Turing. Propusieron un modelo constituido por neuronas artificiales y mostraron, por ejemplo, que cualquier función de cómputo podía calcularse mediante alguna red de neuronas interconectadas y que todos los conectores lógicos (and, or, not, etc) se podrían implementar utilizando estructuras de red sencillas. También sugirieron el aprendizaje por parte de unas neuronas adecuadamente definidas.
 
-### Nacimiento de la inteligencia artificial
+Donald Hebb (1949) propuso y demostró una sencilla regla de actualización para modificar las intensidades de las conexiones entre neuronas. Actualmente es denominada *Regla de Aprendizaje Hebbiano o de Hebb* y sigue vigente en la actualidad.
 
-### Entusiasmo inicial, grandes esperanzas
+Alan Turing articuló primero una visión de la IA en su artículo *Computing Machinery and Intelligence* en 1950 donde introdujo la prueba de Turing, el aprendizaje automático, los algoritmos genéricos y el aprendizaje por refuerzo.
 
-### Una dosis de realidad
+### Nacimiento de la inteligencia artificial (1956)
+Fue en el verano de 1956 cuando se decidió el nombre que esta nueva área de la investigación adoptaría: *Inteligencia Artificial*. Esto sucedió durante un taller en Darmouth con duración de dos meses, organizado por John McCarthy, Minsky, Claude Shannon y Nathaniel Rochester que tuvo un total de 10 asistentes entre los cuales se incluían Trenchad More de Princeton, Arthur Samuel de IBM, y Ray Solomoff y Oliver Selfridge del MIT.
+
+Aunque no se hicieron grandes progresos en la investigación conjunta, destacaron particularmente dos investigadores del Carnegie Tech (Universidad de Carnegie Mellon), Allen Newel y Helbert Simon quienes contaban con un programa de razonamiento, el *Teórico Lógico(TL)*. Al término del taller, dicho programa ya era capaz de demostrar gran parte de los teoremas del Capítulo 2 de *Principia Matemática* de Russel y Whitehead, incluso con demostraciones más cortas que las aportadas por los propios autores.
+
+Newell y Simon también desarrollaron un lenguaje de procesamiento de listas, IPL, para poder escribir el TL. No disponían de un compilador y lo tradujeron a código máquina a mano. Para evitar errores, trabajaron en paralelo, diciendo en voz alta números binarios, conforme escribían cada instrucción para asegurarse de que ambos coincidían.
+
+### Entusiasmo inicial, grandes esperanzas (1952-1969)
+El temprano éxito de Newell y Simon siguió el del sistema general de problemas, o SRGP, el cual, a diferencia del Teórico Lógico, desde un principio de se diseñó para que imitara protocolos de resolución de problemas de los seres humanos. Siendo probablemente, SRGP el primer programa que incorporó el enfoque de "pensar como un humano". Este y otros éxitos llevaron a Newel y Simon a a formular en 1976 la famosa hipótesis del *sistema de símbolos físicos* que afirma que `un sistema de símbolos físcos tiene los medios suficientes y necesarios para generar una acción inteligente`, es decir, que cualquier sistema (humano o máquina) que exhibiese inteligencia debería operar manipulando estructuras de datos compuestas por símbolos.
+
+Arthur Samuel (1952) escribió una serie de programas para el juego de damas que eventualmente aprendieron a jugar hasta el nivel de un amateur, echando por tierra la idea de que los computadores sólo pueden hacer lo que se les dice: su programa aprendió a jugar mejor que su creador.
+
+Herter Gelernter (1959) construyó el demostrador de teoremas de geometría (DTG), capaz de demostrar teoremas que muchos estudiantes de matemáticas podían encontrar muy complejos de resolver.
+
+En 1958, John McCarthy realizó tres grandes contribuciones:
++ Definió el lenguaje de alto nivel Lisp, el segundo lenguaje de programación de alto nivel más antiguo que aún hoy se utiliza, al ser creado un año después que FORTRAN, y que se convertiría en el lenguaje de programación dominante de la IA.
++ Publicó el artículo *Programs with Common Sense*, en el que describía el Generador de Consejos. Este era un programa hipotético que podría considerarse el primer sistema de IA completo y que, a diferencia del TL y DTG, utilizaba conocimiento general del mundo. Era capaz de aceptar nuevos axiomas durante el curso normal de operación, permitiéndole así ser competente en nuevas áreas sin necesidad de reprogramación.
++ Junto a otros compañeros, inventó el tiempo compartido para tratar de solucionar el acceso a los escasos y costosos recursos de cómputo.
+
+Minsky supervisó el trabajo de una serie de estudiantes del MIT que eligieron un número de problemas limitados cuya solución pareció requerir inteligencia, los cuales se conocen como *micromundos*. El micromundo más famoso fue el mundo de bloques, que consiste en un mundo de bloques sólidos colocados sobre una mesa y cuya tarea típica es la reordenación de los bloques utilizando la mano de un robot que es capaz de tomar un sólo bloque cada vez.
+
+El trabajo realizado por McCulloch y Pitts con redes neuronales hizo florecer esta área. Winograd y Cowan mostraron en 1963 cómo un gran número de elementos podrían representar un concepto individual de forma colectivo, llevando consigo un aumento proporcional en robustez y paralelismo. **(FIXME: Hay más detalles, pero en caso de ponerlos habría que buscar sus definiciones: adalines y perceptrones)**
+
+
+### Una dosis de realidad (1966-1973)
+El primer tipo de problemas surgió porque la mayoría de los primeros programas contaban con poco o ningún conocimiento de las materia objeto de estudio; obtenían resultados gracias a sencillas manipulaciones sintácticas. Una anécdota divertida surge con los problemas que surgieron al tratar de traducir algunos textos entre diferentes lenguajes de forma automática.
+
+El segundo problema fue que muchos de los problemas que se estaban tratando de resolver mediante la IA eran intratables. El optimismo que acompañó el logro de la demostración de teoremas pronto se vio eclipsado cuando los investigadores fracasaron en la demostración de teoremas más de unas pocas decenas de condiciones. *El hecho de que, en principio, un programa sea capaz de encontrar una solución no implica que tal programa encierre todos los mecanismos necesarios para encontrar la solución en la práctica*.
+
+El tercer obstáculo se derivó de las limitaciones inherentes a las estructuras básicas que se utilizaban en la generación de la conducta inteligente. Por ejemplo, en 1969, en el libro de Minsky y Papert, *Perceptrons*, se demostró que si bien era posible lograr que los perceptrones (una red neuronal simple) aprendieran cualquier cosa que pudiesen representar, su capacidad de representación era muy limitada.
 
 ### Sistemas basados en conocimiento: ¿clave del poder?
 
