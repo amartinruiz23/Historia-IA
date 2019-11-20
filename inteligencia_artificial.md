@@ -100,3 +100,37 @@ El tercer obstáculo se derivó de las limitaciones inherentes a las estructuras
 ### Emergencia de los sistemas inteligentes
 
 ### Estado del arte
+
+## Problemas éticos
+
+### Seguridad en IA
+
+Un accidente es una situación en la cual el diseñador humano tenía en mente cierto objetivo o tarea pero el sistema diseñado para dicha tarea produce resultados inesperados o dañinos. Podemos clasificar problemas de seguridad según en qué momento del proceso se producen errores.
+
+Primeramente, el diseñador especifica de manera incorrecta la función objetivo, la cual produce resultados dañinos. Si se establece como único objetivo una tarea específica ignorando otros aspectos del ambiente que pueden ser dañinos si son afectados pueden generarse efectos secundarios negativos. Una definición incorrecta del objetivo puede también generar un saboteo del sistema de recompensas (_reward hacking_) de manera que formalmente se maximice el objetivo indicado pero esto no produzca el efecto deseado.
+
+El diseñador conoce la función objetivo correcta pero la manera de evaluarla es demasiado costosa. Malas extrapolaciones de muestras limitadas pueden generar comportamientos dañinos.
+
+Por último, el diseñador puede haber especificado la función objetivo correcta de tal manera que se obtiene un comportamiento correcto, pero se producen malas decisiones debido a unos datos de entrenamiento pobres o a un modelo insuficientemente expresivo. La exploración de agentes puede causar consecuencias negativas y los algoritmos de aprendizaje automático no interpretables pueden tomar malas decisiones con entradas muy diferentes a aquellas con las que han sido entrenados.
+
+Tenemos por tanto cinco causas de accidentes que deben ser contempladas.
+
+#### Evitar efectos secundarios negativos
+
+#### Evitar saboteo del sistema de recompensas
+
+#### Supervisión escalable
+
+#### Exploración segura
+
+#### Robustez frente a cambios distribucionales
+
+<!--- TODO: no sé hasta qué punto merece la pena desarrollar estos apartados. El artículo desarrolla técnicas que se pueden aplicar para afrontar cada uno de los problemas. -->
+
+##### Terminología que quizás haya que desarrollar
+
+- Función objetivo
+- Agente
+- Datos de entrenamiento  
+- Aprendizaje automático (machine learning)
+- Interpretabilidad
