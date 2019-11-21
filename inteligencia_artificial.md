@@ -83,6 +83,7 @@ El trabajo realizado por McCulloch y Pitts con redes neuronales hizo florecer es
 
 
 ### Una dosis de realidad (1966-1973)
+
 El primer tipo de problemas surgió porque la mayoría de los primeros programas contaban con poco o ningún conocimiento de las materia objeto de estudio; obtenían resultados gracias a sencillas manipulaciones sintácticas. Una anécdota divertida surge con los problemas que surgieron al tratar de traducir algunos textos entre diferentes lenguajes de forma automática.
 
 El segundo problema fue que muchos de los problemas que se estaban tratando de resolver mediante la IA eran intratables. El optimismo que acompañó el logro de la demostración de teoremas pronto se vio eclipsado cuando los investigadores fracasaron en la demostración de teoremas más de unas pocas decenas de condiciones. *El hecho de que, en principio, un programa sea capaz de encontrar una solución no implica que tal programa encierre todos los mecanismos necesarios para encontrar la solución en la práctica*.
@@ -100,6 +101,19 @@ El tercer obstáculo se derivó de las limitaciones inherentes a las estructuras
 ### Emergencia de los sistemas inteligentes
 
 ### Estado del arte
+
+La inteligencia artificial está obteniendo grandes resultados en la automatización de una gran variedad de tareas. Veamos algunas de las aplicaciones actuales.
+
+En el reconocimiento de imágenes se están obteniendo resultados mejores que los obtenidos por humanos. En la generación de imágenes son capaces de generar imágenes sintéticas prácticamente indistinguibles de fotografías.
+
+<!--- TODO: añadir gráficas pag 14/15 de Malicious Use--->
+
+
+Los sistemas de inteligencia artificial están obteniendo asombrosos resultados en gran variedad de juegos competitivos, desde el ajedrez al Go y en e-Sports como Dota 2, gracias a técnicas que buscan de manera creativa estrategias exitosas en el largo plazo, apoyándose en objetivos auxiliares y aprendiendo de ejemplos humanos.
+
+Otros campos en los que se empiezan a obtener resultados son el reconocimiento de voz, la comprensión del lenguaje y la navegación automática de vehículos.
+
+<!--- TODO: probablemente haya que completarlo--->
 
 ## Problemas éticos
 
@@ -125,7 +139,23 @@ Tenemos por tanto cinco causas de accidentes que deben ser contempladas.
 
 #### Robustez frente a cambios distribucionales
 
-<!--- TODO: no sé hasta qué punto merece la pena desarrollar estos apartados. El artículo desarrolla técnicas que se pueden aplicar para afrontar cada uno de los problemas. -->
+<!--- TODO: no sé hasta qué punto merece la pena desarrollar estos apartados. El artículo desarrolla técnicas que se pueden aplicar para afrontar cada uno de los problemas. También estaría bien plantear un cambio en la distribución del trabajo para dividir la sección "problemas éticos" en diferentes secciones según de qué tipo de problemas se tratan -->
+
+### Uno malicioso de la inteligencia artificial
+
+El uso malicioso de la inteligencia artificial significa un riesgo para las personas, organizaciones y estados. Puede suponer una amenaza para la seguridad digital, física y política. Existen varias propiedades relevantes en este sentido.
+
+Los sistemas de inteligencia artificial y el conocimiento de como diseñarlos puede ser utilizado tanto constructiva como destructivamente. Los investigadores y desarrolladores no pueden elegir qué tareas producen beneficio al automatizarse y cuáles pueden ser perjudiciales, ya que en la gran mayoría de casos coexisten ambas posibilidades. Por ejemplo, un sistema que busque vulnerabilidades en el software tiene una aplicación tanto defensiva como ofensiva, y las diferencias entre las capacidades de un dron que reparta paquetes de manera automática y un dron que reparta explosivos son las mismas.
+
+Los sistemas de inteligencia artificial suelen ser eficientes y escalables. Decimos que un sistema eficiente si una vez entrenado y desplegado puede completar cierta tarea más rápido o más barato que un humano. Escalable significa que dado un sistema que pueda completar una tarea, se pueden realizar copias del sistema que completen muchas instancias de la tarea. Un sistema de reconocimiento facial es eficiente y escalable ya que una vez desarrollado y entrenado puede ser aplicado a diferentes cámaras por mucho menor coste que el que supondría contratar analistas humanos que hicieran el mismo trabajo.
+
+Los sistemas de inteligencia artificial incrementan el anonimato y la distancia psicológica. Muchas tareas implican comunicación con otras personas, observar y ser observado, tomar decisiones para responder a su comportamiento o estar físicamente presente con ellos. Permitir que dichas tareas sean automatizadas puede permitir a los actores que de otra manera tendría que realizarlas conservar su anonimato y distancia psicológica de las personas a las que afectan. Una persona que utiliza un sistema de arma autónoma para cometer un asesinato en lugar de una pistola evita tener que estar presente en el lugar y tener que mirar a la víctima.
+
+Los desarrollos de IA se prestan a una rápida difusión. Mientas que para atacantes puede ser difícil obtener o reproducir el hardware asociado a los sistemas de inteligencia artificial, es mucho más fácil obtener acceso a software y descubrimientos científicos relevantes. Muchos algoritmos de inteligencia artificial son reproducidos en cuestión de días o semanas. Además la cultura del desarrollo de la inteligencia artificial se caracteriza por un gran grado de apertura. Aunque puede ser deseable limitar la difusión de determinados desarrollos, es difícil de conseguir.
+
+Los sistemas de inteligencia artificial actuales tienen vulnerabilidades no resueltas. Estas incluyen ataques de envenenamiento de datos (introduciendo datos de entrenamiento que causan que el sistema cometa errores), ejemplos adversos (entradas diseñadas para ser mal clasificadas por algoritmos de aprendizaje automático) y la explotación de fallos en el diseño de los objetivos de sistemas autónomos. Estas vulnerabilidades son distintas a las tradicionales del software y demuestran que los sistemas de inteligencia artificial pueden superar el rendimiento de los humanos en muchas tareas, pero también pueden fallar de maneras que un humano nunca lo haría. 
+
+
 
 ##### Terminología que quizás haya que desarrollar
 
