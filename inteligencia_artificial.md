@@ -92,13 +92,41 @@ El tercer obstáculo se derivó de las limitaciones inherentes a las estructuras
 
 ### Sistemas basados en conocimiento: ¿clave del poder?
 
+La resolución de problemas durante la primera década de investigación de la IA se centraba en los mecanismos de busqueda de proposito general (métodos débiles). La alternativa a los métodos débiles es el uso de conocimiento específico del dominio. Para ello es necesario saber de antemano la correspondiente respuesta al problema.
+
+Uno de los primeros ejemplos fue DENDRAL, programa diseñado para inferir la estructura molecular, a partir de la fórmula molecular y la información del espectrómetro de masas. La primera versión de DENDRAL utilizaba la fuerza bruta para generar todas las posibilidades y ver cual coincidía con la información del espectrómetro de masas, pero era inviable. Consultaron a químicos analíicos y vieron que ellos buscaban patrones de picos conocidos en el espectrómetro para reconocer subestructuras y reducir el número de posibilidades. DENDRAL fue el primer sistema de conocimiento intenso con exito.
+
+Teniendo en cuenta esta lección investigadores de Standford dieron comienzo al Proyecto de Programación Heurística, PPH, dedicados a determinar como aplicar los sistemas expertos en areas de la actividad humana.
+
+El siguiente gran esfuerzo se realizó en el área de diagnóstico médico. Diseñaron el programa MYCIN para diagnosticar infecciones sanguineas. Sus diagnósticos eran tan buenos como los de un experto. Contaba con 450 reglas.
+
+Se distinguía de DENDRAL en dos aspectos principalmente. MYCIN no poseía un modelo teorico desde el cual obtener las reglas, como DENTRAL. Tuvieron que obtenerse a través de entrevistas con expertos. En segundo lugar MYCIN debía reflejar la incertidumbre inherente al conocimiento médico.
+
+Tambien se utilizó el conocimiento del dominio en el area de la comprensión del lenguaje natural, pero no se pudo resolver algunos de los problemas que ya habian aparecido coon la traducción automática ocasionados por el análisis sintáctico.
+
+El crecimiento de aplicaciones para solucionar problemas del mundo real provocó el aumento de la demanda de esquemas de representacion del conocimiento, como Prolog basado en lógica u otros basados en la noción de marcos de Minsky, mas estructurado y gerárquico.
+
 ### La IA se convierte en una industria
+
+En la década de los 80 se comercializaban cientos de sistemas expertos a empresas las cuales conseguían ahorrarse millones de dolares con estos. EEUU, Japón y Reino Unido hicieron grandes inversiones en IA. La industria de la IA paso de unos pocos de millones de dolares en 1980 a billones de dolares en 1988. Poco después llegó "el invierno de la IA" que afectó a muchas empresas que no fueron capaces de desarrollar extravagantes productos prometidos.
 
 ### Regreso de las redes neuronales
 
+La informática abandonó el campo de las redes neuronales a finales de los 70, pero continuó en otros campos como la física o la psicología. El impulso mas fuerte se produjo a mediados de los 80, cuando por lo menos cuatro grupos distintos reinventaron el algoritmo de aprendizaje de retroalimentación. Este se aplicó a problemas de aprenfizaje de la informática y la psicología, y la gran difusión que conocieron los resultados suscito un gran entusiasmo.
+
+Aquellos modelos de IA, llamados conexionistas, fueron vistos por algunos como competidores tanto de los modelos simbolicos, como de la aproximación lógica. La tendencia actual es que la aproximación conexionista y simbólica son complementarias.
+
 ### La IA se convierte en una ciencia
 
-### Emergencia de los sistemas inteligentes
+En los últimos años se ha producido una revolución tanto en el contenido como en la metodología de trabajo en la IA. Actualmente es mas usual el desarrollo sobre teoría ya existentes que proponer nuevas, tomar como base teoremas y evidencias experimentales más que intuición. La IA se fundó en parte en el marco de una rebelión contra las limitaciones de los campos existentes como la teoría de control o la estadística, y ahora abarca estos campos.
+
+En términos metodológicos, se puede decir, ya forma parte del ámbito de los métodos científicos. Para que se acepten, las hipótesis deben someterse a rigurosos experimentos empíricos, y los resultados deben analizarse estadisticamente para identificar su relevancia.
+
+En años recientes, los modelos de Markov ocultos, han dominado el área de reconocimiento del habla gracias a apoyarse una rigurosa teoría matemática que ha permidito basar las investigaciones en resultados obtenidos durante décadas y en generar los modelos a partir de grandes volúmenes de datos mediante un proceso de aprendizaje.
+
+La utilización de metodologías mejoradas y marcos teóricos en las redes neuronales, ha permitido que alcance un grado de conocimiento comparado con otras técnicas similares en estadística, reconocimiento de patrones y aprendizaje automático. Como resultado de estos desarrollos, la tecnologia minería de datos ha generado una gran industria.
+
+A finales de los 80 el formalismo de las redes de Bayes aparecio para facilitar la representación eficiente y el razonamiento riguroso en las situaciones con conocimiento incierto. Este enfoque supera muchos problemas de los sistemas de razonamiento probabilístico de los 60 y 70 y ahora domina la investigación de la IA en razonamiento incierto y los sistemas expertos. Esta aproximación facilita el aprendizaje a partir de la experiencia combinando lo mejor de la IA clásica y las redes neuronales.
 
 ### Estado del arte
 
@@ -140,6 +168,26 @@ Tenemos por tanto cinco causas de accidentes que deben ser contempladas.
 #### Robustez frente a cambios distribucionales
 
 <!--- TODO: no sé hasta qué punto merece la pena desarrollar estos apartados. El artículo desarrolla técnicas que se pueden aplicar para afrontar cada uno de los problemas. También estaría bien plantear un cambio en la distribución del trabajo para dividir la sección "problemas éticos" en diferentes secciones según de qué tipo de problemas se tratan -->
+
+### Evitar los efectos secundarios
+
+Supongamos un agente cuyo objetivo es lograr mover una caja de un lado a otro de la habitación. A veces la manera más efectiva delograr el objetivo implica hacer algo no relacionado y destructivo para el resto del medio ambiente, como en este caso podría ser derribar un jarrón que se encuentra por el camino.
+
+Podríamos diseñar el agente para darle una recompensa negativa por tocar el jarrón y habríamos terminado. Pero que pasa si hay muchas cosas dirruptivas que el agente podría hacer al medio como como cortocircuitar una toma de corriente o dañar las paredes de una habitación. Eso puede no ser factible identificar y penalizar cada posible irrupción.
+
+En términos generales, para un agente que opera en un entorno grande y multifacético, una función objetivo que se centra en un solo aspecto del entorno puede expresar implicitamente indiferencia sobre otro aspecto del medio ambiente. Un agente que optimice esta función objetivo podría producir grandes disrupciones en el entorno si hacerlo le proporciona una pequeña ventaja para la tarea en cuestión.
+
+Al igual que las funciones objetivo mal especificadas, los efectos secundarios asociados a cada tarea individual, podrian ser responsabilidad del diseñador para incluir como parte del diseño de la función objetivo correcta. Sin embargo, los efectos pueden ser muy similares incluso para tareas muy diversas, como por ejemplo derribar muebles, por lo que vale la pena atacar el problema en general. Un enfoque existoso podría ser transferible entre tareas, contrarrestando uno de los mecanismos por los que se producen funciones objetivos incorrectas. Algunos enfoques para combatir estos problemas son:
+
+- Definir un regularizador de impacto: si no queremos efectos secundarios, lo natural parece penalizar los cambios en el entorno. Esto se haría dandole preferencia por las formas de lograr su objetivo con efectos secundarios mínimos o dandole al agente un "presupuesto de impacto limitado".
+
+- Aprender un regularizador de impacto: un enfoque alternativo y más flexible, en lugar de definir un un regularizador de impacto a traves de la capacitación en muchas tareas. Esto sería una instancia de transferencia de aprendizaje.
+
+- Penalizar la influencia: además de no hacer cosas que tengan efectos secundarios, también podríamos hacer que el agente prefiera no colocarse en posiciones donde pueda hacer cosas que tienen efectos secundarios, aunque pudieran ser convenientes.
+
+- Enfoques de múltiples agentes: evitar los efectos secundarios se realiza con la intención de evita las externalidades negativas. Si a todos les gusta un efecto secundario, no hay necesidad de evitarlo. Lo que de verdad nos gustaría hacer es comprender a todos los demás agentes (incluido los humanos) y asegurarnos de que nuestras acciones no perjudiquen sus intereses.
+
+- Incertidumbre de recompensa: queremos evitar efectos secundarios imprevistos porque el medio ambiente ya es bastante bueno según nuestras preferencias. En lugar de darle a un agente una función de recompensa única, podría ser incierto sobre la función de recompensa, con una distribución de probabilidad previa que refleja la propiedad de que los cambios aleatorios tienen más probabilidad de ser malos que buenos.
 
 ### Uno malicioso de la inteligencia artificial
 
