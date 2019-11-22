@@ -27,19 +27,19 @@ La prueba de Turing evita deliberadamente la interacción física directa entre 
 - Visión computacional para percibir objetos
 - Robótica para manipular objetos
 
-La prueba sigue vigente, pero los investigadores de la IA han dedicado poco esfuerzo a la evaluación de sus sistemas con la Prueba de Turing, por creer que es más importante el estudio de los princpios en los que se basa la inteligencia que duplicar un ejemplar de la misma.
+La prueba sigue vigente, pero los investigadores de la IA han dedicado poco esfuerzo a la evaluación de sus sistemas con la Prueba de Turing, por creer que es más importante el estudio de los principios en los que se basa la inteligencia que duplicar un ejemplar de la misma.
 
 ### Pensar como un humano: el enfoque del modelo cognitivo
 
 Para poder decir que un programa dado piensa como un humano es necesario contar con un mecanismo para determinar cómo piensan los humanos. Una vez se cuente con una teoría los suficientemente precisa sobre cómo trabaja la mente, se podrá expresar esa teoría en la forma de un programa de computador. En el campo interdisciplinario de la ciencia cognitiva convergen modelos computacionales de IA y técnicas experimentales de psicología intentado elaborar teorías precisas y verificables sobre el funcionamiento de la mente humana.
 
-En los comienzos de la IA existía una confución entre las distintas aproximaciones: se argumentaba que un algoritmo resolvía adecuadamente una tarea y que por tanto era un buen modelo de representación humana, o viceversa. La correcta diferenciación ha permitido que tanto IA como ciencia cognitiva se desarrollen más rápidamente. Los dos campos se alimentan entre sí, especialmente en las áreas de visión y lenguaje natural.
+En los comienzos de la IA existía una confusión entre las distintas aproximaciones: se argumentaba que un algoritmo resolvía adecuadamente una tarea y que por tanto era un buen modelo de representación humana, o viceversa. La correcta diferenciación ha permitido que tanto IA como ciencia cognitiva se desarrollen más rápidamente. Los dos campos se alimentan entre sí, especialmente en las áreas de visión y lenguaje natural.
 
 ### Pensamiento racional: el enfoque de las leyes del pensamiento
 
 Los silogismos de Sócrates son el primer intento de codificar la "manera correcta de pensar", es decir, un proceso de razonamiento irrefutable. Son el inicio del campo que hoy día conocemos como lógica.
 
-En el siglo XIX se desarrolla una notación precisa para definir sentencias sobre elementos del mundo y especificar realaciones entre ellos. La tradición logista dentro del campo de la inteligencia artificial trata de construir sistemas inteligentes a partir de la lógica.
+En el siglo XIX se desarrolla una notación precisa para definir sentencias sobre elementos del mundo y especificar relaciones entre ellos. La tradición logista dentro del campo de la inteligencia artificial trata de construir sistemas inteligentes a partir de la lógica.
 
 Este enfoque presenta dos obstáculos. No es fácil transformar el conocimiento informar y expresarlo en términos formales que requieren de notación lógica, particularmente cuando el conocimiento que se tiene sobre algo no es total. En segundo lugar, hay una diferencia entre poder resolver el problema y poder hacerlo en la práctica. Incluso problemas con apenas una docena de datos pueden agotar los recursos computacionales de cualquier computador. Estos obstáculos están presentes en todo intento de construir sistemas de razonamiento computacional pero surgieron por primera vez en la tradición lógica.
 
@@ -47,7 +47,7 @@ Este enfoque presenta dos obstáculos. No es fácil transformar el conocimiento 
 
 Un agente es algo que razona, pero los agentes informáticos deben tener otros atributos como estar dotados de controles autónomos, percibir su entorno, persistir un periodo de tiempo prolongado, adaptarse a cambios y ser capaces de alcanzar objetivos diferentes. Un agente racional es aque que actúa con la intención de alcanzar el mejor resultado o, cuando hay incertidumbre, el mejor resultado esperado.
 
-El agente racional no solo se centra en hacer inferencias correctas, sino que además debe llevar a cabo las acciones. Efectuar una inferencia correcta no depende de la racionalidad, ya que hay situaciones en las que no existe una acción correcta y hay que tomar decisiones. Existen formas de actuar racionalmente que no implican inferencia. La racionalidad perfecta (hacer siempre lo correcto) no es siempre posible en entornos complejos. La demanda computacional que esto implica es demasiado grande. Es por ello que podemos contar con que los agentes racionales tienen una racionalidad limitada (actuar adecuadamente cuando no se cuenta con el tiempo suficiente para afectuar todos los cálculos deseables).
+El agente racional no solo se centra en hacer inferencias correctas, sino que además debe llevar a cabo las acciones. Efectuar una inferencia correcta no depende de la racionalidad, ya que hay situaciones en las que no existe una acción correcta y hay que tomar decisiones. Existen formas de actuar racionalmente que no implican inferencia. La racionalidad perfecta (hacer siempre lo correcto) no es siempre posible en entornos complejos. La demanda computacional que esto implica es demasiado grande. Es por ello que podemos contar con que los agentes racionales tienen una racionalidad limitada (actuar adecuadamente cuando no se cuenta con el tiempo suficiente para efectuar todos los cálculos deseables).
 
 ## Historia de la inteligencia artificial
 
@@ -201,7 +201,7 @@ Los sistemas de inteligencia artificial incrementan el anonimato y la distancia 
 
 Los desarrollos de IA se prestan a una rápida difusión. Mientas que para atacantes puede ser difícil obtener o reproducir el hardware asociado a los sistemas de inteligencia artificial, es mucho más fácil obtener acceso a software y descubrimientos científicos relevantes. Muchos algoritmos de inteligencia artificial son reproducidos en cuestión de días o semanas. Además la cultura del desarrollo de la inteligencia artificial se caracteriza por un gran grado de apertura. Aunque puede ser deseable limitar la difusión de determinados desarrollos, es difícil de conseguir.
 
-Los sistemas de inteligencia artificial actuales tienen vulnerabilidades no resueltas. Estas incluyen ataques de envenenamiento de datos (introduciendo datos de entrenamiento que causan que el sistema cometa errores), ejemplos adversos (entradas diseñadas para ser mal clasificadas por algoritmos de aprendizaje automático) y la explotación de fallos en el diseño de los objetivos de sistemas autónomos. Estas vulnerabilidades son distintas a las tradicionales del software y demuestran que los sistemas de inteligencia artificial pueden superar el rendimiento de los humanos en muchas tareas, pero también pueden fallar de maneras que un humano nunca lo haría. 
+Los sistemas de inteligencia artificial actuales tienen vulnerabilidades no resueltas. Estas incluyen ataques de envenenamiento de datos (introduciendo datos de entrenamiento que causan que el sistema cometa errores), ejemplos adversos (entradas diseñadas para ser mal clasificadas por algoritmos de aprendizaje automático) y la explotación de fallos en el diseño de los objetivos de sistemas autónomos. Estas vulnerabilidades son distintas a las tradicionales del software y demuestran que los sistemas de inteligencia artificial pueden superar el rendimiento de los humanos en muchas tareas, pero también pueden fallar de maneras que un humano nunca lo haría.
 
 
 
@@ -212,3 +212,83 @@ Los sistemas de inteligencia artificial actuales tienen vulnerabilidades no resu
 - Datos de entrenamiento  
 - Aprendizaje automático (machine learning)
 - Interpretabilidad
+
+
+### Objeciones de Turing
+En 1950 fue publicado, en la revista Mind, el artículo "_Computing Machinery and Intelligence_" escrito por Alan Turing, el cual se centraba en tratar el tema de la Inteligencia Artificial.
+
+El artículo comienza dando en consideración la pregunta de "_¿Pueden pensar las máquinas?_", dejando en claro que la principal intención del artículo es discutir esta cuestión. Así es como el documento destaca por dos grandes cosas: La primera mención al público del conocido _Test de Turing_ y el planteamiento y respuesta de algunas de las _Objeciones de Turing_. En este apartado nos centraremos en estas últimas.
+
+Estas objeciones, son los hipotéticos argumentos que Turing se imaginaba que recibiría como respuesta negativa a la pregunta formulada anteriormente. De esta forma, el autor se dedicó a desmentir cada una de estas objeciones en el mismo artículo. A continuación, comentaremos cada una de estas objeciones:
+
+#### La objeción teológica
+
+> El pensamiento es una función del alma inmortal del hombre. Dios ha proporcionado un alma inmortal a todos los hombres y mujeres, pero no así a ningún otro animal, ni tampoco a las máquinas. Por consiguiente, ningún animal o máquina puede pensar.
+
+Aquí deja bastante claro tanto al inicio como al final de su razonamiento lo poco de acuerdo que está con esta opinión religiosa y, pese a ello, trata de rebatirla utilizando argumentos de índole teológica.
+
+Su contraargumento se basa la propia suposición que la cita hace sobre el alcance de los poderes de Dios.
+
+Concretamente, la cita afirma que Dios sólo puede conferir de alma inmortal a los hombres y mujeres, cuando Él tiene la libertad de conferir alma a un animal si así lo desea. De la misma forma, si así lo quisiera, Dios podría conferirle a una máquina de un alma inmortal, si así lo deseara.
+
+Así, al crear máquinas pensantes, seríamos instrumentos de Su voluntad para crear recintos para las almas que él crea, de la misma forma que si procreásemos hijos.
+
+#### La objeción de la "cabeza en la arena"
+
+> Las consecuencias de que las máquinas pensaran serían demasiado terribles. Esperemos y creamos que no pueden hacerlo.
+
+Aquí comenta que nos gusta pensar que el hombre es, en cierto modo, superior al resto de los seres. Concretamente, nos gustaría poder demostrar que es necesariamente superior, puesto que así no habría peligro de que perdiera su posición dominante. Añade, que no tiene sentido tratar de seguir refutando este argumento y, finaliza bromeando con que quizás quienes sean afines con este pensamiento deberían buscar consuelo en las transmigración de las almas.
+
+#### La objeción matemática
+
+> Existen muchos resultados de lógica matemática que pueden utilizarse para demostrar que hay limitaciones al potencial de las máquinas de estado discreto. [...] Este es el resultado matemático: se afirma que prueba que las máquinas adolecen de una incapacidad a la que no se encuentra sujeto el intelecto humano.
+
+La respuesta breve que ofrece Turing a esta afirmación, no es ni más ni menos que durante el propio razonamiento se asume que las limitaciones que les ponen a las máquinas no se aplican a los seres humanos, cuando esto no es necesariamente cierto.
+
+Después de todo, los seres humanos respondemos erróneamente con frecuencia y estos errores no nos hace ser menos humanos.
+
+Entonces, ¿por qué si una máquina comete errores que también son cometidos por humanos, ya afirmamos haber demostrado que no es pensante? Es dicha pregunta la que utiliza Turing para rebatir el anterior argumento "matemático".
+
+#### El argumento de la conciencia
+
+> No podremos aceptar que la máquina iguala al cerebro hasta que una máquina pueda escribir un soneto o componer un concierto en respuesta a pensamientos y emociones experimentadas y no mediante una cascada aleatoria de símbolos. (Esto es, no sólo escribir el soneto, sino saber que ha sido escrito.) Ningún mecanismo podría sentir placer por sus éxitos (y no meramente emitir artificialmente una señal, fácil artilugio), experimentar pesar cuando se funden sus válvulas, ni sentirse enternecido por los halagos o miserable por sus errores, ni encantada por el sexo o enfadada o deprimida cuando no consigue lo que desea. — Jefferson, 1949
+
+Aquí, Turing comenta que la única forma de estar seguros de si una máquina piensa o no, es de hecho, _ser_ la máquina y sentirse uno mismo pensar; puesto que así podríamos describir estos sentimientos al mundo pero nadie se sentiría justificado por prestar atención. De la misma forma, para saber si un hombre concreto piensa, tendríamos que ser ese hombre en particular.
+
+De esta forma, dos individuos pueden razonar que sólo ellos piensan y el contrario no. Pero pese a ello, en lugar de entrar en bucle infinito sobre cuál de los dos piensa, se tiende a recurrir al convenio de que ambos piensan.
+
+#### Argumentos sobre diversas incapacidades
+
+Estos argumentos suelen ser de la forma: "_Acepto que puedas hacer que las máquinas hagan todo lo que hasta ahora has mencionado, pero nunca podrás hacer que una de ellas haga X_".
+
+Aquí, tras dar varios ejemplos sobre cosas que fueron dichas que las máquinas no podrían hacer y que a largo plazo sí podría ser implementado, comenta que decir que una máquina no tiene diversidad de conductas se traduce en decir que no tiene gran capacidad de almacenamiento. Conforme pasa el tiempo, cada vez podemos ver que la falta de almacenamiento no es precisamente un problema del que suelan disponer las máquinas.
+
+Además, compara este argumento con el argumento de Jefferson y lo ve como una forma de disfrazar el argumento de la conciencia.
+
+#### La objeción de Lady Lovelace
+
+> La máquina no pretende crear nada. Puede hacer lo que sea que sepamos ordenarle. - Ada Lovelace, 1842
+
+Aquí, Turing comenta que la falta de conocimiento de Lovelace respecto al conocimiento matemático y computacional del tiempo de Turing fue lo que, dentro del contexto de Ada, la llevase a realizar dicha afirmación.
+
+Además, nos remite a la sección "_Máquinas que aprenden_" del mismo artículo, donde aborda en mayor profundidad y detalle esta temática.
+
+#### El argumento de la continuidad del sistema nervioso
+
+Turing admite que el sistema nervioso no es una máquina de estado discreto. Un pequeño error en la información acerca de las dimensiones del impulso nervioso que incide en una neurona puede marcar una gran diferencia en las dimensiones del impulso de salida. Podría argüirse que, siendo así, no podemos esperar ser capaces de imitar el comportamiento del sistema nervioso con un sistema de estado discreto.
+
+Es cierto que una máquina de estado discreto debe ser diferente de una máquina continua. Sin embargo, si nos apegamos a las condiciones del Test de Turing, el examinador no tendría ninguna ventaja con esta diferencia.
+
+#### El argumento de la información del comportamiento
+
+> No es posible producir un conjunto de reglas que pretenda describir lo que
+una persona debe hacer en cada grupo de circunstancias concebible. Podría, por ejemplo, haber una regla que dictara que debemos detenernos al ver la luz roja de un semáforo y avanzar cuando la luz cambie a verde. Entonces, ¿qué sucedería si por algún desperfecto ambas aparecieran al
+mismo tiempo? Tal vez se decidiría que lo más seguro sería detenerse. No
+obstante, más adelante podría surgir otra dificultad a raíz de esta decisión.
+Intentar proporcionar reglas de conducta que cubran cualquier eventualidad, incluso las que surjan a partir de las luces de los semáforos, parecería imposible. Concuerdo con todo esto
+
+Si este argumento fuera cierto, entonces deberíamos de ser capaces de descubrir por observación lo suficiente acerca de ella para predecir su comportamiento futuro en un tiempo razonable. Turing reta al lector a ser capaz de conseguir estas leyes de comportamiento para una pequeña máquina que implementó en Manchester.
+
+#### El argumento de la percepción extrasensorial
+
+Turing no tiene un argumento viable en contra de estas afirmaciones, en caso de considerarlas ciertas. Además, comenta que en caso de considerarlas ciertas, ya no podríamos considerar que nuestros cuerpos se mueven de acuerdo a las leyes conocidas de la física, ni con algunas otras aún no descubiertas.
