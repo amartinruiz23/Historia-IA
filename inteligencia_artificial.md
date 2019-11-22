@@ -136,7 +136,6 @@ En el reconocimiento de imágenes se están obteniendo resultados mejores que lo
 
 <!--- TODO: añadir gráficas pag 14/15 de Malicious Use--->
 
-
 Los sistemas de inteligencia artificial están obteniendo asombrosos resultados en gran variedad de juegos competitivos, desde el ajedrez al Go y en e-Sports como Dota 2, gracias a técnicas que buscan de manera creativa estrategias exitosas en el largo plazo, apoyándose en objetivos auxiliares y aprendiendo de ejemplos humanos.
 
 Otros campos en los que se empiezan a obtener resultados son el reconocimiento de voz, la comprensión del lenguaje y la navegación automática de vehículos.
@@ -144,75 +143,6 @@ Otros campos en los que se empiezan a obtener resultados son el reconocimiento d
 <!--- TODO: probablemente haya que completarlo--->
 
 ## Problemas éticos
-
-### Seguridad en IA
-
-Un accidente es una situación en la cual el diseñador humano tenía en mente cierto objetivo o tarea pero el sistema diseñado para dicha tarea produce resultados inesperados o dañinos. Podemos clasificar problemas de seguridad según en qué momento del proceso se producen errores.
-
-Primeramente, el diseñador especifica de manera incorrecta la función objetivo, la cual produce resultados dañinos. Si se establece como único objetivo una tarea específica ignorando otros aspectos del ambiente que pueden ser dañinos si son afectados pueden generarse efectos secundarios negativos. Una definición incorrecta del objetivo puede también generar un saboteo del sistema de recompensas (_reward hacking_) de manera que formalmente se maximice el objetivo indicado pero esto no produzca el efecto deseado.
-
-El diseñador conoce la función objetivo correcta pero la manera de evaluarla es demasiado costosa. Malas extrapolaciones de muestras limitadas pueden generar comportamientos dañinos.
-
-Por último, el diseñador puede haber especificado la función objetivo correcta de tal manera que se obtiene un comportamiento correcto, pero se producen malas decisiones debido a unos datos de entrenamiento pobres o a un modelo insuficientemente expresivo. La exploración de agentes puede causar consecuencias negativas y los algoritmos de aprendizaje automático no interpretables pueden tomar malas decisiones con entradas muy diferentes a aquellas con las que han sido entrenados.
-
-Tenemos por tanto cinco causas de accidentes que deben ser contempladas.
-
-#### Evitar efectos secundarios negativos
-
-#### Evitar saboteo del sistema de recompensas
-
-#### Supervisión escalable
-
-#### Exploración segura
-
-#### Robustez frente a cambios distribucionales
-
-<!--- TODO: no sé hasta qué punto merece la pena desarrollar estos apartados. El artículo desarrolla técnicas que se pueden aplicar para afrontar cada uno de los problemas. También estaría bien plantear un cambio en la distribución del trabajo para dividir la sección "problemas éticos" en diferentes secciones según de qué tipo de problemas se tratan -->
-
-### Evitar los efectos secundarios
-
-Supongamos un agente cuyo objetivo es lograr mover una caja de un lado a otro de la habitación. A veces la manera más efectiva delograr el objetivo implica hacer algo no relacionado y destructivo para el resto del medio ambiente, como en este caso podría ser derribar un jarrón que se encuentra por el camino.
-
-Podríamos diseñar el agente para darle una recompensa negativa por tocar el jarrón y habríamos terminado. Pero que pasa si hay muchas cosas dirruptivas que el agente podría hacer al medio como como cortocircuitar una toma de corriente o dañar las paredes de una habitación. Eso puede no ser factible identificar y penalizar cada posible irrupción.
-
-En términos generales, para un agente que opera en un entorno grande y multifacético, una función objetivo que se centra en un solo aspecto del entorno puede expresar implicitamente indiferencia sobre otro aspecto del medio ambiente. Un agente que optimice esta función objetivo podría producir grandes disrupciones en el entorno si hacerlo le proporciona una pequeña ventaja para la tarea en cuestión.
-
-Al igual que las funciones objetivo mal especificadas, los efectos secundarios asociados a cada tarea individual, podrian ser responsabilidad del diseñador para incluir como parte del diseño de la función objetivo correcta. Sin embargo, los efectos pueden ser muy similares incluso para tareas muy diversas, como por ejemplo derribar muebles, por lo que vale la pena atacar el problema en general. Un enfoque existoso podría ser transferible entre tareas, contrarrestando uno de los mecanismos por los que se producen funciones objetivos incorrectas. Algunos enfoques para combatir estos problemas son:
-
-- Definir un regularizador de impacto: si no queremos efectos secundarios, lo natural parece penalizar los cambios en el entorno. Esto se haría dandole preferencia por las formas de lograr su objetivo con efectos secundarios mínimos o dandole al agente un "presupuesto de impacto limitado".
-
-- Aprender un regularizador de impacto: un enfoque alternativo y más flexible, en lugar de definir un un regularizador de impacto a traves de la capacitación en muchas tareas. Esto sería una instancia de transferencia de aprendizaje.
-
-- Penalizar la influencia: además de no hacer cosas que tengan efectos secundarios, también podríamos hacer que el agente prefiera no colocarse en posiciones donde pueda hacer cosas que tienen efectos secundarios, aunque pudieran ser convenientes.
-
-- Enfoques de múltiples agentes: evitar los efectos secundarios se realiza con la intención de evita las externalidades negativas. Si a todos les gusta un efecto secundario, no hay necesidad de evitarlo. Lo que de verdad nos gustaría hacer es comprender a todos los demás agentes (incluido los humanos) y asegurarnos de que nuestras acciones no perjudiquen sus intereses.
-
-- Incertidumbre de recompensa: queremos evitar efectos secundarios imprevistos porque el medio ambiente ya es bastante bueno según nuestras preferencias. En lugar de darle a un agente una función de recompensa única, podría ser incierto sobre la función de recompensa, con una distribución de probabilidad previa que refleja la propiedad de que los cambios aleatorios tienen más probabilidad de ser malos que buenos.
-
-### Uno malicioso de la inteligencia artificial
-
-El uso malicioso de la inteligencia artificial significa un riesgo para las personas, organizaciones y estados. Puede suponer una amenaza para la seguridad digital, física y política. Existen varias propiedades relevantes en este sentido.
-
-Los sistemas de inteligencia artificial y el conocimiento de como diseñarlos puede ser utilizado tanto constructiva como destructivamente. Los investigadores y desarrolladores no pueden elegir qué tareas producen beneficio al automatizarse y cuáles pueden ser perjudiciales, ya que en la gran mayoría de casos coexisten ambas posibilidades. Por ejemplo, un sistema que busque vulnerabilidades en el software tiene una aplicación tanto defensiva como ofensiva, y las diferencias entre las capacidades de un dron que reparta paquetes de manera automática y un dron que reparta explosivos son las mismas.
-
-Los sistemas de inteligencia artificial suelen ser eficientes y escalables. Decimos que un sistema eficiente si una vez entrenado y desplegado puede completar cierta tarea más rápido o más barato que un humano. Escalable significa que dado un sistema que pueda completar una tarea, se pueden realizar copias del sistema que completen muchas instancias de la tarea. Un sistema de reconocimiento facial es eficiente y escalable ya que una vez desarrollado y entrenado puede ser aplicado a diferentes cámaras por mucho menor coste que el que supondría contratar analistas humanos que hicieran el mismo trabajo.
-
-Los sistemas de inteligencia artificial incrementan el anonimato y la distancia psicológica. Muchas tareas implican comunicación con otras personas, observar y ser observado, tomar decisiones para responder a su comportamiento o estar físicamente presente con ellos. Permitir que dichas tareas sean automatizadas puede permitir a los actores que de otra manera tendría que realizarlas conservar su anonimato y distancia psicológica de las personas a las que afectan. Una persona que utiliza un sistema de arma autónoma para cometer un asesinato en lugar de una pistola evita tener que estar presente en el lugar y tener que mirar a la víctima.
-
-Los desarrollos de IA se prestan a una rápida difusión. Mientas que para atacantes puede ser difícil obtener o reproducir el hardware asociado a los sistemas de inteligencia artificial, es mucho más fácil obtener acceso a software y descubrimientos científicos relevantes. Muchos algoritmos de inteligencia artificial son reproducidos en cuestión de días o semanas. Además la cultura del desarrollo de la inteligencia artificial se caracteriza por un gran grado de apertura. Aunque puede ser deseable limitar la difusión de determinados desarrollos, es difícil de conseguir.
-
-Los sistemas de inteligencia artificial actuales tienen vulnerabilidades no resueltas. Estas incluyen ataques de envenenamiento de datos (introduciendo datos de entrenamiento que causan que el sistema cometa errores), ejemplos adversos (entradas diseñadas para ser mal clasificadas por algoritmos de aprendizaje automático) y la explotación de fallos en el diseño de los objetivos de sistemas autónomos. Estas vulnerabilidades son distintas a las tradicionales del software y demuestran que los sistemas de inteligencia artificial pueden superar el rendimiento de los humanos en muchas tareas, pero también pueden fallar de maneras que un humano nunca lo haría.
-
-
-
-##### Terminología que quizás haya que desarrollar
-
-- Función objetivo
-- Agente
-- Datos de entrenamiento  
-- Aprendizaje automático (machine learning)
-- Interpretabilidad
-
 
 ### Objeciones de Turing
 En 1950 fue publicado, en la revista Mind, el artículo "_Computing Machinery and Intelligence_" escrito por Alan Turing, el cual se centraba en tratar el tema de la Inteligencia Artificial.
@@ -292,3 +222,67 @@ Si este argumento fuera cierto, entonces deberíamos de ser capaces de descubrir
 #### El argumento de la percepción extrasensorial
 
 Turing no tiene un argumento viable en contra de estas afirmaciones, en caso de considerarlas ciertas. Además, comenta que en caso de considerarlas ciertas, ya no podríamos considerar que nuestros cuerpos se mueven de acuerdo a las leyes conocidas de la física, ni con algunas otras aún no descubiertas.
+
+### Seguridad en IA
+
+Un accidente es una situación en la cual el diseñador humano tenía en mente cierto objetivo o tarea pero el sistema diseñado para dicha tarea produce resultados inesperados o dañinos. Podemos clasificar problemas de seguridad según en qué momento del proceso se producen errores.
+
+Primeramente, el diseñador especifica de manera incorrecta la función objetivo, la cual produce resultados dañinos. Si se establece como único objetivo una tarea específica ignorando otros aspectos del ambiente que pueden ser dañinos si son afectados pueden generarse efectos secundarios negativos. Una definición incorrecta del objetivo puede también generar un saboteo del sistema de recompensas (_reward hacking_) de manera que formalmente se maximice el objetivo indicado pero esto no produzca el efecto deseado.
+
+El diseñador conoce la función objetivo correcta pero la manera de evaluarla es demasiado costosa. Malas extrapolaciones de muestras limitadas pueden generar comportamientos dañinos.
+
+Por último, el diseñador puede haber especificado la función objetivo correcta de tal manera que se obtiene un comportamiento correcto, pero se producen malas decisiones debido a unos datos de entrenamiento pobres o a un modelo insuficientemente expresivo. La exploración de agentes puede causar consecuencias negativas y los algoritmos de aprendizaje automático no interpretables pueden tomar malas decisiones con entradas muy diferentes a aquellas con las que han sido entrenados.
+
+Tenemos por tanto cinco causas de accidentes que deben ser contempladas.
+
+#### Evitar efectos secundarios negativos
+
+Supongamos un agente cuyo objetivo es lograr mover una caja de un lado a otro de la habitación. A veces la manera más efectiva delograr el objetivo implica hacer algo no relacionado y destructivo para el resto del medio ambiente, como en este caso podría ser derribar un jarrón que se encuentra por el camino.
+
+Podríamos diseñar el agente para darle una recompensa negativa por tocar el jarrón y habríamos terminado. Pero que pasa si hay muchas cosas dirruptivas que el agente podría hacer al medio como como cortocircuitar una toma de corriente o dañar las paredes de una habitación. Eso puede no ser factible identificar y penalizar cada posible irrupción.
+
+En términos generales, para un agente que opera en un entorno grande y multifacético, una función objetivo que se centra en un solo aspecto del entorno puede expresar implicitamente indiferencia sobre otro aspecto del medio ambiente. Un agente que optimice esta función objetivo podría producir grandes disrupciones en el entorno si hacerlo le proporciona una pequeña ventaja para la tarea en cuestión.
+
+Al igual que las funciones objetivo mal especificadas, los efectos secundarios asociados a cada tarea individual, podrian ser responsabilidad del diseñador para incluir como parte del diseño de la función objetivo correcta. Sin embargo, los efectos pueden ser muy similares incluso para tareas muy diversas, como por ejemplo derribar muebles, por lo que vale la pena atacar el problema en general. Un enfoque existoso podría ser transferible entre tareas, contrarrestando uno de los mecanismos por los que se producen funciones objetivos incorrectas. Algunos enfoques para combatir estos problemas son:
+
+- Definir un regularizador de impacto: si no queremos efectos secundarios, lo natural parece penalizar los cambios en el entorno. Esto se haría dandole preferencia por las formas de lograr su objetivo con efectos secundarios mínimos o dandole al agente un "presupuesto de impacto limitado".
+
+- Aprender un regularizador de impacto: un enfoque alternativo y más flexible, en lugar de definir un un regularizador de impacto a traves de la capacitación en muchas tareas. Esto sería una instancia de transferencia de aprendizaje.
+
+- Penalizar la influencia: además de no hacer cosas que tengan efectos secundarios, también podríamos hacer que el agente prefiera no colocarse en posiciones donde pueda hacer cosas que tienen efectos secundarios, aunque pudieran ser convenientes.
+
+- Enfoques de múltiples agentes: evitar los efectos secundarios se realiza con la intención de evita las externalidades negativas. Si a todos les gusta un efecto secundario, no hay necesidad de evitarlo. Lo que de verdad nos gustaría hacer es comprender a todos los demás agentes (incluido los humanos) y asegurarnos de que nuestras acciones no perjudiquen sus intereses.
+
+- Incertidumbre de recompensa: queremos evitar efectos secundarios imprevistos porque el medio ambiente ya es bastante bueno según nuestras preferencias. En lugar de darle a un agente una función de recompensa única, podría ser incierto sobre la función de recompensa, con una distribución de probabilidad previa que refleja la propiedad de que los cambios aleatorios tienen más probabilidad de ser malos que buenos.
+
+#### Evitar saboteo del sistema de recompensas
+
+#### Supervisión escalable
+
+#### Exploración segura
+
+#### Robustez frente a cambios distribucionales
+
+<!--- TODO: no sé hasta qué punto merece la pena desarrollar estos apartados. El artículo desarrolla técnicas que se pueden aplicar para afrontar cada uno de los problemas. También estaría bien plantear un cambio en la distribución del trabajo para dividir la sección "problemas éticos" en diferentes secciones según de qué tipo de problemas se tratan -->
+
+### Uno malicioso de la inteligencia artificial
+
+El uso malicioso de la inteligencia artificial significa un riesgo para las personas, organizaciones y estados. Puede suponer una amenaza para la seguridad digital, física y política. Existen varias propiedades relevantes en este sentido.
+
+Los sistemas de inteligencia artificial y el conocimiento de como diseñarlos puede ser utilizado tanto constructiva como destructivamente. Los investigadores y desarrolladores no pueden elegir qué tareas producen beneficio al automatizarse y cuáles pueden ser perjudiciales, ya que en la gran mayoría de casos coexisten ambas posibilidades. Por ejemplo, un sistema que busque vulnerabilidades en el software tiene una aplicación tanto defensiva como ofensiva, y las diferencias entre las capacidades de un dron que reparta paquetes de manera automática y un dron que reparta explosivos son las mismas.
+
+Los sistemas de inteligencia artificial suelen ser eficientes y escalables. Decimos que un sistema eficiente si una vez entrenado y desplegado puede completar cierta tarea más rápido o más barato que un humano. Escalable significa que dado un sistema que pueda completar una tarea, se pueden realizar copias del sistema que completen muchas instancias de la tarea. Un sistema de reconocimiento facial es eficiente y escalable ya que una vez desarrollado y entrenado puede ser aplicado a diferentes cámaras por mucho menor coste que el que supondría contratar analistas humanos que hicieran el mismo trabajo.
+
+Los sistemas de inteligencia artificial incrementan el anonimato y la distancia psicológica. Muchas tareas implican comunicación con otras personas, observar y ser observado, tomar decisiones para responder a su comportamiento o estar físicamente presente con ellos. Permitir que dichas tareas sean automatizadas puede permitir a los actores que de otra manera tendría que realizarlas conservar su anonimato y distancia psicológica de las personas a las que afectan. Una persona que utiliza un sistema de arma autónoma para cometer un asesinato en lugar de una pistola evita tener que estar presente en el lugar y tener que mirar a la víctima.
+
+Los desarrollos de IA se prestan a una rápida difusión. Mientas que para atacantes puede ser difícil obtener o reproducir el hardware asociado a los sistemas de inteligencia artificial, es mucho más fácil obtener acceso a software y descubrimientos científicos relevantes. Muchos algoritmos de inteligencia artificial son reproducidos en cuestión de días o semanas. Además la cultura del desarrollo de la inteligencia artificial se caracteriza por un gran grado de apertura. Aunque puede ser deseable limitar la difusión de determinados desarrollos, es difícil de conseguir.
+
+Los sistemas de inteligencia artificial actuales tienen vulnerabilidades no resueltas. Estas incluyen ataques de envenenamiento de datos (introduciendo datos de entrenamiento que causan que el sistema cometa errores), ejemplos adversos (entradas diseñadas para ser mal clasificadas por algoritmos de aprendizaje automático) y la explotación de fallos en el diseño de los objetivos de sistemas autónomos. Estas vulnerabilidades son distintas a las tradicionales del software y demuestran que los sistemas de inteligencia artificial pueden superar el rendimiento de los humanos en muchas tareas, pero también pueden fallar de maneras que un humano nunca lo haría.
+
+##### Terminología que quizás haya que desarrollar
+
+- Función objetivo
+- Agente
+- Datos de entrenamiento  
+- Aprendizaje automático (machine learning)
+- Interpretabilidad
