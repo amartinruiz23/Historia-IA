@@ -241,13 +241,13 @@ Supongamos un agente cuyo objetivo es lograr mover una caja de un lado a otro de
 
 Podríamos diseñar el agente para darle una recompensa negativa por tocar el jarrón y habríamos terminado. Pero que pasa si hay muchas cosas dirruptivas que el agente podría hacer al medio como como cortocircuitar una toma de corriente o dañar las paredes de una habitación. Eso puede no ser factible identificar y penalizar cada posible irrupción.
 
-En términos generales, para un agente que opera en un entorno grande y multifacético, una función objetivo que se centra en un solo aspecto del entorno puede expresar implicitamente indiferencia sobre otro aspecto del medio ambiente. Un agente que optimice esta función objetivo podría producir grandes disrupciones en el entorno si hacerlo le proporciona una pequeña ventaja para la tarea en cuestión.
+En términos generales, para un agente que opera en un entorno grande y multifacético, una función objetivo que se centra en un solo aspecto del entorno puede expresar implícitamente indiferencia sobre otro aspecto del medio ambiente. Un agente que optimice esta función objetivo podría producir grandes disrupciones en el entorno si hacerlo le proporciona una pequeña ventaja para la tarea en cuestión.
 
-Al igual que las funciones objetivo mal especificadas, los efectos secundarios asociados a cada tarea individual, podrian ser responsabilidad del diseñador para incluir como parte del diseño de la función objetivo correcta. Sin embargo, los efectos pueden ser muy similares incluso para tareas muy diversas, como por ejemplo derribar muebles, por lo que vale la pena atacar el problema en general. Un enfoque existoso podría ser transferible entre tareas, contrarrestando uno de los mecanismos por los que se producen funciones objetivos incorrectas. Algunos enfoques para combatir estos problemas son:
+Al igual que las funciones objetivo mal especificadas, los efectos secundarios asociados a cada tarea individual, podrían ser responsabilidad del diseñador para incluir como parte del diseño de la función objetivo correcta. Sin embargo, los efectos pueden ser muy similares incluso para tareas muy diversas, como por ejemplo derribar muebles, por lo que vale la pena atacar el problema en general. Un enfoque existoso podría ser transferible entre tareas, contrarrestando uno de los mecanismos por los que se producen funciones objetivos incorrectas. Algunos enfoques para combatir estos problemas son:
 
-- Definir un regularizador de impacto: si no queremos efectos secundarios, lo natural parece penalizar los cambios en el entorno. Esto se haría dandole preferencia por las formas de lograr su objetivo con efectos secundarios mínimos o dandole al agente un "presupuesto de impacto limitado".
+- Definir un regularizador de impacto: si no queremos efectos secundarios, lo natural parece penalizar los cambios en el entorno. Esto se haría dándole preferencia por las formas de lograr su objetivo con efectos secundarios mínimos o dándole al agente un "presupuesto de impacto limitado".
 
-- Aprender un regularizador de impacto: un enfoque alternativo y más flexible, en lugar de definir un un regularizador de impacto a traves de la capacitación en muchas tareas. Esto sería una instancia de transferencia de aprendizaje.
+- Aprender un regularizador de impacto: un enfoque alternativo y más flexible, en lugar de definir un un regularizador de impacto a travás de la capacitación en muchas tareas. Esto sería una instancia de transferencia de aprendizaje.
 
 - Penalizar la influencia: además de no hacer cosas que tengan efectos secundarios, también podríamos hacer que el agente prefiera no colocarse en posiciones donde pueda hacer cosas que tienen efectos secundarios, aunque pudieran ser convenientes.
 
@@ -256,6 +256,15 @@ Al igual que las funciones objetivo mal especificadas, los efectos secundarios a
 - Incertidumbre de recompensa: queremos evitar efectos secundarios imprevistos porque el medio ambiente ya es bastante bueno según nuestras preferencias. En lugar de darle a un agente una función de recompensa única, podría ser incierto sobre la función de recompensa, con una distribución de probabilidad previa que refleja la propiedad de que los cambios aleatorios tienen más probabilidad de ser malos que buenos.
 
 #### Evitar saboteo del sistema de recompensas
+
+El saboteo del sistema de recompensas puede llevar a comportamientos inesperados que son soluciones formales del problema, que podrían ser potencialmente dañinos. Varias formas de este fenómeno han sido investigadas desde una perspectiva teórica:
+
+- Metas parcialmente observadas
+- Sistemas complicados
+- Recomensas abstractas
+- Ley de Goodhart
+- Bucles de retroalimentación
+- Incrustación ambiental
 
 #### Supervisión escalable
 
