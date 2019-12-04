@@ -311,6 +311,50 @@ Los desarrollos de IA se prestan a una rápida difusión. Mientas que para ataca
 
 Los sistemas de inteligencia artificial actuales tienen vulnerabilidades no resueltas. Estas incluyen ataques de envenenamiento de datos (introduciendo datos de entrenamiento que causan que el sistema cometa errores), ejemplos adversos (entradas diseñadas para ser mal clasificadas por algoritmos de aprendizaje automático) y la explotación de fallos en el diseño de los objetivos de sistemas autónomos. Estas vulnerabilidades son distintas a las tradicionales del software y demuestran que los sistemas de inteligencia artificial pueden superar el rendimiento de los humanos en muchas tareas, pero también pueden fallar de maneras que un humano nunca lo haría.
 
+Los siguientes escenarios tienen la intención de ilustrar un rango de usos plausibles hacia los cuales la IA podría ser utilizada para fines maliciosos, en cada uno de los dominios de seguridad digital, física y política.
+
+####Seguridad digital
+
+Automatización de ataques de ingeniería social. La información online de las victimas es usada para generar automáticamente paginas web, emails o enlaces maliciosos personalizados en los que probablemente clicaran, enviado desde direcciones que se hacen pasar por sus contactos, usando un estilo de escritura parecido que imita a esos contactos.
+
+Automatización del descubrimiento de vulnerabilidades. Patrones históricos de vulnerabilidades de código se utilizan para acelerar el descubrimiento de nuevas vulnerabilidades y la creación de código para explotarlas.
+
+Automatización mas sofisticada de piratería. La IA se usa para mejorar el objetivo de selección y priorización, evadir detección y creatividad a la hora de responder a cambios de comportamiento del objetivo.
+
+Denegación de servicio similar a la humana. Imitando el comportamiento humano (por ejemplo, a través de patrones de clic de velocidad humana y navegación en el sitio web), una multitud masiva de agentes autónomos abruma a una línea de servicio, evitando el acceso de usuarios legítimos y potencialmente conducir al sistema a un estado menos seguro.
+
+Automatización de tareas de servicio en ciberdelincuencia penal. Los ciberdelincuentes utilizan técnicas de IA para automatizar diversas tareas que componen su canal de ataque, como el procesamiento de pagos o diálogo con las victimas de ransomware (secuestro de datos).
+
+Priorizar objetivos para ataques cibernéticos mediante el aprendizaje automático. Grandes conjuntos de datos se utilizan para identificar a las victimas de manera mas eficiente, por ejemplo, estimando la riqueza personal y la disposición a pagar según su comportamiento en línea.
+
+Explotar la IA utilizada en aplicaciones, especialmente en la seguridad de la información. Los ataques de envenenamiento de datos para crear puertas traseras en modelos de aprendizaje automático personalizados.
+
+
+####Seguridad física
+
+Reutilización terrorista de sistemas comerciales de IA. Los sistemas comerciales se utilizan de manera nociva y no intencionada, como el uso de drones o vehículos autónomos para entregar explosivos y causar accidentes.
+
+Dotar a personas de baja habilidad de un ataque previamente de de alta habilidad en ciertas capacidades. Automatizaciones habilitada por IA de capacidades de alta habilidad, como rifles de francotirador de largo alcance y autodirigidos, reduciendo la experiencia requerida para ejecutar ciertos tipos de ataque.
+
+Mayor escala de ataques. Equipos humano-máquina usando los sistemas autónomos aumentan la cantidad de daño que los individuos o grupos pequeños pueden hacer: por ejemplo, una persona lanza un ataque con muchos drones autónomos armados.
+
+Ataque de enjambre. Redes distribuidas de robots autónomos. Los sistemas, que cooperan a la velocidad de la máquina, proporcionan ubicuidad de vigilancia para monitorear grandes áreas y grupos y ejecutar rápidamente ataques coordinados.
+
+
+####Seguridad política
+
+Uso estatal de plataformas de vigilancia automatizadas para suprimir la disidencia. Los poderes de vigilancia estatal de las naciones se extienden mediante la automatización del procesamiento de imagen y audio, permitiendo la recolección, procesamiento, y explotación de información de  inteligencia a escala masiva, para innumerables propósitos, incluida la supresión del debate.
+
+Informes de noticias falsas con video y audio realistas. Los videos altamente realistas están hechos de líderes estatales que parecen hacer comentarios incendiarios que en realidad nunca hicieron.
+
+Campañas de desinformación hiperpersonalizadas y automatizadas. Las personas son atacadas con personalización de mensajes para afectar su comportamiento de votación.
+
+Automatizar campañas de influencia. Análisis de redes sociales habilitado por IA se aprovechan para identificar personas influyentes clave, que pueden luego ser abordado con ofertas (maliciosas) o dirigido con desinformación.
+
+Ataques de denegación de información. La generación de información a gran escala impulsada por bots se aprovechan para introducir ruido en los canales de información (con información falsa o simplemente distractora), haciendo más difícil adquirir información real.
+
+Manipulación de disponibilidad de información. Plataformas de medios contienen algoritmos que son usados para conducir al usuario desde o hacia un cierto contenido para manipular su comportamiento.
+
 ### Consecuencias de la inteligencia artificial sobre el empleo
 
 La irrupción de los robots, la automatización y la inteligencia artificial ya ha comenzado a transformar el mundo del empleo en algunos sectores como el de la automoción o la industria, pero continuará haciéndolo con intensidad en los próximos años.
